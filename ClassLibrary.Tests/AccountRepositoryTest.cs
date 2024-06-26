@@ -7,9 +7,15 @@ namespace ClassLibrary.Tests
     public class AccountRepositoryTest:AccountRespository
     {
         [TestMethod]
-        public void TestMethod()
+        public void Add_Test()
         {
-            Assert.IsTrue(1==1);
+            // Prepare
+            int a = 1;
+            int b = 2;
+            int c = 3;
+            // Act 
+            int result = Add(a, b);
+            Assert.IsTrue(c==result);
         }
     }
 }
